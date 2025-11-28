@@ -3,71 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bifanas do Marujo</title>
+    <title>Bifanas do Marujo | As Melhores Bifanas de Portugal</title>
 
-    <!-- Ligação ao teu CSS moderno -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <nav>
         <div class="logo">Bifanas do Marujo</div>
-        <ul>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#menu">Menu</a></li> <li><a href="#galeria">Galeria</a></li>
             <li><a href="#contactos">Contactos</a></li>
         </ul>
     </nav>
 
-    <!-- HEADER / HERO -->
     <header id="inicio">
         <h1>Bifanas do Marujo</h1>
-        <p>Bem-vindo ao sabor das melhores bifanas da zona! Preparadas com dedicação, tradição e aquele toque especial.</p>
-        <button onclick="window.location.href='#galeria'">Ver Galeria</button>
+        <p>Bem-vindo ao sabor das melhores bifanas da zona! Preparadas com **dedicação, tradição e aquele toque especial** de Portugal.</p>
+        <div class="header-buttons">
+            <button class="primary-btn" onclick="window.location.href='#menu'">Ver Menu</button>
+            <button class="secondary-btn" onclick="window.location.href='#contactos'">Encomendar Já</button>
+        </div>
     </header>
 
-    <!-- SECÇÃO SOBRE -->
+    <hr>
+
     <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>
-            As Bifanas do Marujo são preparadas com ingredientes frescos, pão estaladiço e o molho secreto que faz toda a diferença.
-            Um sabor tradicional português, com qualidade e rapidez no atendimento!
-        </p>
-    </section>
-
-    <!-- GALERIA -->
-    <section id="galeria" class="gallery">
-        <h2>Galeria</h2>
-
-        <div class="grid">
-            <img src="images/bifana1.jpg" alt="Bifana tradicional em pão fresco" loading="lazy">
-            <img src="images/bifana2.jpg" alt="Bifana com molho especial picante" loading="lazy">
-            <img src="images/bifana3.jpg" alt="Detalhe do molho artesanal" loading="lazy">
-            <img src="images/bifana4.jpg" alt="Bifana servida no prato com acompanhamento" loading="lazy">
-            <img src="images/bifana5.jpg" alt="Close-up da carne temperada" loading="lazy">
-            <img src="images/bifana6.jpg" alt="Sandes de bifana pronta a servir" loading="lazy">
+        <div class="sobre-content">
+            <div class="sobre-text">
+                <h2>Sobre Nós 🧑‍🍳</h2>
+                <p>
+                    Desde 2015 a servir a **verdadeira bifana portuguesa**. As Bifanas do Marujo são preparadas diariamente com **lombo de porco fresco** e marinado lentamente. O nosso segredo está no **pão estaladiço** e, claro, no **molho artesanal** cozinhado durante horas, que lhe confere um sabor inconfundível. 
+                </p>
+                <p>
+                    Na nossa casa, a **qualidade** e a **rapidez** no atendimento são a nossa prioridade. Venha provar a tradição!
+                </p>
+            </div>
+            <img src="images/about-us.jpg" alt="Chef a preparar uma bifana em pão fresco" class="sobre-img" loading="lazy">
         </div>
     </section>
 
-    <!-- CONTACTOS -->
-    <section id="contactos">
-        <h2>Contactos</h2>
-        <p>Podes falar connosco através das redes sociais:</p>
-        <p>
-            <strong>Facebook:</strong>
-            <a href="https://facebook.com" target="_blank">facebook.com/bifanasdomarujo</a>
-            <br>
-            <strong>Instagram:</strong>
-            <a href="https://instagram.com" target="_blank">@bifanasdomarujo</a>
-        </p>
+    <hr>
+
+    <section id="menu" class="menu-section">
+        <h2>O Nosso Menu 🍽️</h2>
+
+        <div class="menu-grid">
+            
+            <div class="menu-category">
+                <h3>Bifanas Clássicas</h3>
+                <div class="menu-item">
+                    <div class="item-name">Bifana Marujo Original</div>
+                    <div class="item-price">€ 4.50</div>
+                    <div class="item-description">Carne de lombo finamente batida e marinada no nosso molho clássico.</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">Bifana Picante</div>
+                    <div class="item-price">€ 4.90</div>
+                    <div class="item-description">A Original com um toque de malagueta caseira e piri-piri.</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">Bifana com Queijo</div>
+                    <div class="item-price">€ 5.50</div>
+                    <div class="item-description">Queijo da Serra cremoso a derreter por cima da carne.</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Acompanhamentos & Extra</h3>
+                <div class="menu-item">
+                    <div class="item-name">Batatas Fritas (Porção)</div>
+                    <div class="item-price">€ 2.50</div>
+                    <div class="item-description">Batatas frescas cortadas à mão.</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">Prego no Pão</div>
+                    <div class="item-price">€ 5.00</div>
+                    <div class="item-description">Lombo de vaca grelhado no momento com alho.</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">Molho Extra</div>
+                    <div class="item-price">€ 0.50</div>
+                    <div class="item-description">Uma taça extra do nosso molho secreto.</div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Bebidas Frescas</h3>
+                <div class="menu-item">
+                    <div class="item-name">Cerveja Artesanal (0.33cl)</div>
+                    <div class="item-price">€ 2.80</div>
+                    <div class="item-description">Seleção de cervejas artesanais portuguesas.</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">Sumo Natural do Dia</div>
+                    <div class="item-price">€ 3.00</div>
+                    <div class="item-description">Feito com fruta fresca e sem adição de açúcares.</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-name">Água (1.5L)</div>
+                    <div class="item-price">€ 1.50</div>
+                    <div class="item-description">Água mineral natural.</div>
+                </div>
+            </div>
+        </div>
+        <p class="menu-note">Todos os pratos são confecionados com ingredientes de origem local.</p>
     </section>
 
-    <!-- FOOTER -->
+    <hr>
+
+    <section id="galeria" class="gallery">
+        <h2>Galeria 📸</h2>
+        <div class="grid">
+            <figure>
+                <img src="images/bifana1.jpg" alt="Bifana tradicional em pão fresco">
+                <figcaption>A Clássica Marujo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bifana2.jpg" alt="Bifana com molho especial picante">
+                <figcaption>Com Molho Picante</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bifana3.jpg" alt="Detalhe do molho artesanal">
+                <figcaption>O Nosso Molho Secreto</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bifana4.jpg" alt="Bifana servida no prato com acompanhamento">
+                <figcaption>Servida com Batatas Fritas</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bifana5.jpg" alt="Close-up da carne temperada">
+                <figcaption>Carne de Lombo Fresca</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bifana6.jpg" alt="Sandes de bifana pronta a servir">
+                <figcaption>Pronta a Levar</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contactos">
+        <h2>Contactos e Encomendas 📍</h2>
+        <p>Podes falar connosco, fazer a tua encomenda ou saber onde estamos através dos seguintes meios:</p>
+        <div class="contact-details">
+            <p>
+                <strong>Morada:</strong> Rua das Bifanas, 47 - 4000-000 Porto, Portugal
+            </p>
+            <p>
+                <strong>Telefone:</strong> <a href="tel:+351221234567">+351 22 123 4567</a>
+            </p>
+            <p>
+                <strong>Facebook:</strong>
+                <a href="https://facebook.com/bifanasdomarujo" target="_blank">facebook.com/bifanasdomarujo</a>
+            </p>
+            <p>
+                <strong>Instagram:</strong>
+                <a href="https://instagram.com/bifanasdomarujo" target="_blank">@bifanasdomarujo</a>
+            </p>
+        </div>
+        
+        <a href="tel:+351221234567" class="order-btn primary-btn">Ligar para Encomendar Agora</a>
+
+    </section>
+
     <footer>
         <p>© 2025 Bifanas do Marujo — Todos os direitos reservados.</p>
-        <p>Feito com ❤️ e muito sabor.</p>
+        <p>Feito com ❤️ e muito sabor. <span class="heart-emoji">🇵🇹</span></p>
     </footer>
 
 </body>
