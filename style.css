@@ -1,121 +1,187 @@
-/* BASIC RESET */
+/* ---------------------------- */
+/*   ESTILO MODERNO PREMIUM     */
+/* ---------------------------- */
+
+:root {
+  --primary: #d32f2f;
+  --secondary: #ffccbc;
+  --bg: #f9f9f9;
+  --text: #333;
+  --radius: 14px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.1);
+  --transition: 0.25s ease;
+}
+
+/* Reseta o comportamento da página */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fff5f5;
-    color: #333;
-    line-height: 1.6;
-    transition: 0.3s;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* DARK MODE */
-body.dark {
-    background: #121212;
-    color: #ddd;
+/* ---------------------------- */
+/*        NAVBAR FIXA          */
+/* ---------------------------- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  z-index: 1000;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: #a32020;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary);
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: var(--transition);
 }
 
-#darkToggle {
-    background: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
+nav ul li a:hover {
+  color: var(--primary);
 }
 
-.hero {
-    background: #d43131;
-    color: white;
-    padding: 150px 20px;
-    text-align: center;
+/* Compensar a navbar fixa */
+header {
+  margin-top: 90px;
 }
 
-.content {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+/* ---------------------------- */
+/*        HEADER / HERO         */
+/* ---------------------------- */
+header {
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.image-section img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
+header h1 {
+  font-size: 2.6rem;
+  color: var(--primary);
 }
 
-.gallery .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+header p {
+  margin: 15px auto;
+  max-width: 600px;
+  color: #555;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+header button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
 }
 
+header button:hover {
+  background: #b71c1c;
+}
+
+/* ---------------------------- */
+/*          GALERIA            */
+/* ---------------------------- */
+.gallery {
+  padding: 50px 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.15);
+}
+
+/* ---------------------------- */
+/*        SECÇÕES NORMAIS       */
+/* ---------------------------- */
+section {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 800px;
+  color: #555;
+}
+
+/* ---------------------------- */
+/*          RODAPÉ             */
+/* ---------------------------- */
 footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: #222;
+  color: #eee;
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
 }
 
-/* ANIMATIONS */
-.fade-in, .fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1.1s ease forwards;
+footer p {
+  color: #bbb;
 }
 
-.fade-in {
-    transform: translateY(0);
-    animation: fadeIn 1.2s ease forwards;
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* RESPONSIVO */
-@media (max-width: 700px) {
-    .navbar ul {
-        display: none;
-    }
+footer a:hover {
+  text-decoration: underline;
 }
