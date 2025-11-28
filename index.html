@@ -1,84 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bifanas do Restaurante Conga</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bifanas do Marujo</title>
+
+    <!-- Ligação ao teu CSS moderno -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <h1 class="logo">Conga</h1>
-    <ul>
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#historia">História</a></li>
-        <li><a href="#bifana">A Bifana</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#info">Informações</a></li>
-    </ul>
-    <button id="darkToggle" aria-label="Ativar modo escuro">🌙</button>
-</nav>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Bifanas do Marujo</div>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+        </ul>
+    </nav>
 
-<section id="hero" class="hero fade-in">
-    <div class="hero-content">
-        <h2>As Famosas Bifanas da Conga</h2>
-        <p>Onde o picante e o sabor se encontram desde 1976.</p>
-        <a href="#bifana" class="btn">Ver Especialidade</a>
-    </div>
-</section>
+    <!-- HEADER / HERO -->
+    <header id="inicio">
+        <h1>Bifanas do Marujo</h1>
+        <p>Bem-vindo ao sabor das melhores bifanas da zona! Preparadas com dedicação, tradição e aquele toque especial.</p>
+        <button onclick="window.location.href='#galeria'">Ver Galeria</button>
+    </header>
 
-<section id="historia" class="content fade-up">
-    <h2>História</h2>
-    <p>
-        Fundado em 1976 no coração do Porto, o Restaurante Conga tornou-se uma referência em bifanas picantes. 
-        O ambiente é familiar, e clientes de todas as idades apreciam a combinação perfeita de tempero e tradição.
-    </p>
-    <p>
-        Ao longo dos anos, a Conga manteve a receita original e o amor pelo detalhe, fazendo com que cada bifana 
-        seja preparada com atenção e carinho.
-    </p>
-</section>
+    <!-- SECÇÃO SOBRE -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            As Bifanas do Marujo são preparadas com ingredientes frescos, pão estaladiço e o molho secreto que faz toda a diferença.
+            Um sabor tradicional português, com qualidade e rapidez no atendimento!
+        </p>
+    </section>
 
-<section id="bifana" class="content image-section fade-up">
-    <h2>A Bifana da Conga</h2>
-    <p>
-        A estrela do menu é a bifana picante, marinada com especiarias secretas e cozinhada lentamente até atingir a perfeição.
-        Servida em pão fresco, com molho suculento e pimentos, é impossível resistir.
-    </p>
-    <p>
-        Curiosidade: cada bifana demora cerca de 6 horas para marinar, garantindo sabor intenso e carne macia.
-    </p>
-    <img src="images/bifanas-1.jpg" alt="Bifanas da Conga" loading="lazy">
-</section>
+    <!-- GALERIA -->
+    <section id="galeria" class="gallery">
+        <h2>Galeria</h2>
 
-<section id="galeria" class="gallery fade-up">
-    <h2>Galeria</h2>
-    <div class="grid">
-        <img src="images/bifanas-1.jpg" alt="Bifanas" loading="lazy">
-        <img src="images/dn_2025-11-19_6entajmm_conga.jpg" alt="Restaurante Conga" loading="lazy">
-        <img src="images/image.jpg" alt="Molho ou outro detalhe" loading="lazy">
-    </div>
-</section>
+        <div class="grid">
+            <img src="images/bifana1.jpg" alt="Bifana tradicional em pão fresco" loading="lazy">
+            <img src="images/bifana2.jpg" alt="Bifana com molho especial picante" loading="lazy">
+            <img src="images/bifana3.jpg" alt="Detalhe do molho artesanal" loading="lazy">
+            <img src="images/bifana4.jpg" alt="Bifana servida no prato com acompanhamento" loading="lazy">
+            <img src="images/bifana5.jpg" alt="Close-up da carne temperada" loading="lazy">
+            <img src="images/bifana6.jpg" alt="Sandes de bifana pronta a servir" loading="lazy">
+        </div>
+    </section>
 
-<section id="info" class="content fade-up">
-    <h2>Informações</h2>
-    <ul>
-        <li><strong>Localização:</strong> Rua do Bonjardim, Porto</li>
-        <li><strong>Especialidade:</strong> Bifanas picantes</li>
-        <li><strong>Horário:</strong> Segunda a Domingo, 11h - 23h</li>
-        <li><strong>Contacto:</strong> +351 22 200 0113</li>
-        <li><strong>Redes Sociais:</strong> 
-            <a href="https://www.instagram.com/conga_casadasbifanas/" target="_blank" rel="noopener noreferrer">Instagram</a> | 
-            <a href="https://web.facebook.com/CONGACASADASBIFANAS/?locale=pt_PT&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </li>
-    </ul>
-</section>
+    <!-- CONTACTOS -->
+    <section id="contactos">
+        <h2>Contactos</h2>
+        <p>Podes falar connosco através das redes sociais:</p>
+        <p>
+            <strong>Facebook:</strong>
+            <a href="https://facebook.com" target="_blank">facebook.com/bifanasdomarujo</a>
+            <br>
+            <strong>Instagram:</strong>
+            <a href="https://instagram.com" target="_blank">@bifanasdomarujo</a>
+        </p>
+    </section>
 
-<footer>
-    <p>Site criado com ❤️ sobre as míticas bifanas da Conga.</p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Bifanas do Marujo — Todos os direitos reservados.</p>
+        <p>Feito com ❤️ e muito sabor.</p>
+    </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
